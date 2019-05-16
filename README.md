@@ -1,3 +1,2 @@
-#Jolly Jared Demo
-
-Demo redesign for jollyjared
+# Jolly Jared Demo
+a demo site redesign for jollyjared.com

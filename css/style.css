@@ -1,0 +1,13 @@
+@font-face {
+    font-family: Mont Bold;
+    src: url(../fonts/Mont-HeavyDEMO.otf);
+  }
+
+  body {
+      font-family: Mont Bold, Arial, Helvetica, sans-serif;
+  }
+
+  h1 {
+      letter-spacing: -0.12rem;
+      text-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+  }
