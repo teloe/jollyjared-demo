@@ -23,34 +23,43 @@
 <body>
 
     <div id="main-sidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Beach Rentals</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Services</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Shop</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Photos</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Blog</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-        </li>
+        <div>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Beach Rentals</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Shop</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Photos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+            </li>
+        </div>
+        <div class="social-links">
+            <a style="display: inline-block;"><i class="fab fa-facebook-square social"></i></a>
+            <a style="display: inline-block;"><i class="fab fa-linkedin social"></i></a>
+            <a style="display: inline-block;"><i class="fas fa-envelope social"></i></a>
+
+        </div>
     </div>
     <div class="main">
-        <div class="menu-content">
-            <div class="menu-bar">
+        <div class="menu-bar">
+            <div class="menu-content">
                 <div class="menu-container my-auto">
                     <span style="font-size:30px;cursor:pointer; color: #5B86E5;" onclick="openNav()">&#9776;</span>
                 </div>
                 <div class="mx-auto" style="width: 100px;">
-                    <a class="navbar-brand" href="./index.html"><img src="./images/logo.png" width="100"></a>
+                    <a class="navbar-brand" href="./index.html"><img src="./images/logo.png" width="100"
+                            class="logo"></a>
                 </div>
             </div>
 
@@ -69,13 +78,14 @@
 
             <section id="welcome">
 
-                    <h2 class="text-align-center">Hi, I'm Jared</h2>
-                    <p>This website is dedicated to help promote my small businesses and to educate people that individuals with disabilities can succeed with a little bit of help from their family and friends.</p>
+                <h2 class="text-align-center">Hi, I'm Jared</h2>
+                <p>This website is dedicated to help promote my small businesses and to educate people that individuals
+                    with disabilities can succeed with a little bit of help from their family and friends.</p>
             </section>
-            
+
             <section id="testimonials"></section>
             <p>
-                 My start-up businesses
+                My start-up businesses
                 include beach supply rental and delivery, coffee delivery, and firewood sales and delivery. My goal is
                 to
                 make all three of these successful enterprises that will give me the opportunity to make some income,
@@ -129,8 +139,48 @@
 
         </div>
         <footer>
-            <div class="footer-content">
-                <p class="mb-0">Copyright &amp; Jolly Jarred, LLC.</p>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-sm-12">
+                        <h2>Jolly Jared's</h2>
+                        <a>Phone: (805) 722-7177</a><br>
+                        <a>Email: jollyjaredSB@gmail.com</a>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <div>
+                            <li class="nav-item">
+                                <a href="#">Beach Rentals</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Shop</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Photos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Contact</a>
+                            </li>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                        <div class="social-links" style="padding: 10px 0; width: 100%;">
+                                <a style="display: inline-block;"><i class="fab fa-facebook-square social"></i></a>
+                                <a style="display: inline-block;"><i class="fab fa-linkedin social"></i></a>
+                                <a style="display: inline-block;"><i class="fas fa-envelope social"></i></a>
+                    
+                            </div>
+                </div>
+
+            </div>
+            <div class="copyright mx-auto">
+                <p class="mb-0">Copyright &copy; 2019 Jolly Jarred, LLC.</p>
             </div>
         </footer>
     </div>
