@@ -1,13 +1,177 @@
 @font-face {
     font-family: Mont Bold;
     src: url(../fonts/Mont-HeavyDEMO.otf);
-  }
+}
 
-  body {
-      font-family: Mont Bold, Arial, Helvetica, sans-serif;
-  }
+body, header {
+    font-family: 'Paytone One', sans-serif;
+    color: #424242;
+}
 
-  h1 {
-      letter-spacing: -0.12rem;
-      text-shadow: 5px 5px 10px rgba(0,0,0,0.5);
-  }
+.main {
+    font-family: 'Oxygen', sans-serif;
+}
+
+/* Side Nav/ Menu ====================================== */
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to left, #36D1DC, #5B86E5);
+    overflow-x: hidden;
+    transition: 0.5s ease;
+    padding-top: 60px;
+}
+
+.sidenav li {
+    list-style: none;
+    
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    transform: scale(1.1);
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.menu-bar {
+    position: fixed;
+    width: 100%;
+    background: #fff;
+}
+
+.menu-content {
+    position: relative;
+}
+
+.menu-container {
+    top: 0;
+    bottom: 0;
+    left: 20px;
+    height: 30px;
+    position: absolute;
+}
+
+/* Homepage Main Section ================================ */
+.main {
+    transition: 0.5s ease;
+}
+
+.content {
+    padding-top: 2rem;
+}
+
+/* .content h2 {
+    padding-top: 2rem;
+    text-shadow: 1px 2px 2px rgba(0,0,0,0.3);
+    color: #5B86E5;
+    text-align: center;
+}
+
+.content h2::after {
+    content: '';
+    background: #36D1DC;
+    height: 2px;
+    width: 40px;
+    display: block;
+    margin: 20px auto;
+} */
+
+
+/* Section ============================================= */
+
+
+/* Section ============================================= */
+
+
+/* Section ============================================= */
+
+
+
+
+
+
+
+
+
+
+
+header {
+    background: url(../images/home-banner1.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.banner-content {
+    min-height: 80vh;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    color: #fff;
+    font-size: 4rem;
+    letter-spacing: -0.12rem;
+    /* text-shadow: 5px 5px 10px rgba(0,0,0,0.5); */
+}
+
+h4::before,
+h4::after {
+    content: '';
+    background: #fff;
+    width: 20px;
+    height: 2px;
+    display: inline-block;
+    vertical-align: middle;
+
+}
+
+h4::before {
+    margin-right: 10px;
+}
+
+h4::after {
+    margin-left: 10px;
+}
+
+
+
+
+/* Footer ============================================= */
+
+footer {
+    color: #fff;
+    min-height: 200px;
+    background: #505050;
+}
+
+.shrink {
+    height: 80px;
+    transition: 0.5s ease;
+}
