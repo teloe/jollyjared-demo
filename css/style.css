@@ -5,27 +5,51 @@
 
 /*--------------------------------------------------------*/
 /* General ===============================================*/
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
 body,
 header {
     font-family: 'Paytone One', sans-serif;
     color: #424242;
 }
 
-p {
-    font-family: 'Oxygen', sans-serif;
+h1  {
+    letter-spacing: -0.1rem;
 }
 
-/* Side Nav/ Menu ======================================= */
+p {
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 300;
+    line-height: 1.6rem;
+}
 
+.main {
+    transition: 0.5s ease;
+}
+
+section {
+    padding: 4rem 0;
+}
+
+
+/* Side Nav/ Menu ======================================= */
 .sidenav {
     height: 100%;
-    max-height: 100vh;
-    width: 0;
+    width: 300px;
+    transform: translateX(-300px);
     position: fixed;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    z-index: 1;
+    z-index: 100;
     top: 0;
     left: 0;
     background-image: linear-gradient(to left, #36D1DC, #5B86E5);
@@ -66,6 +90,7 @@ p {
 
 .menu-bar {
     z-index: 10;
+    top: 0;
     position: fixed;
     width: 100%;
     background: #fff;
@@ -115,50 +140,8 @@ p {
 
 }
 
-/* Homepage Main Section ================================ */
-.main {
-    transition: 0.5s ease;
-}
 
-.content {
-    padding-top: 2rem;
-}
-
-/* .content h2 {
-    padding-top: 2rem;
-    text-shadow: 1px 2px 2px rgba(0,0,0,0.3);
-    color: #5B86E5;
-    text-align: center;
-}
-
-.content h2::after {
-    content: '';
-    background: #36D1DC;
-    height: 2px;
-    width: 40px;
-    display: block;
-    margin: 20px auto;
-} */
-
-
-/* Section ============================================= */
-
-
-/* Section ============================================= */
-
-
-/* Section ============================================= */
-
-
-
-
-
-
-
-
-
-
-
+/* Header =============================================== */
 header {
     background: url(../images/home-banner1.jpg) no-repeat;
     background-size: cover;
@@ -174,11 +157,9 @@ header {
     text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
-h1 {
+header h1 {
     color: #fff;
     font-size: 4rem;
-    letter-spacing: -0.12rem;
-    /* text-shadow: 5px 5px 10px rgba(0,0,0,0.5); */
 }
 
 h4::before,
@@ -201,35 +182,85 @@ h4::after {
 }
 
 
+/* About Section ======================================== */
+#about {
+    background: #fafafa;
+}
+#about h1 {
+    color: #102A43;
+}
+
+.outer-bg {
+    margin: 2rem auto auto;
+    height: 350px;
+    width: 250px;
+    background: #5B86E5;
+    transform: rotate(5deg);
+}
+
+.inner-bg {
+    float: right;
+    height: 350px;
+    width: 250px;
+    background: #36D1DC;
+    transform: rotate(5deg);
+}
+
+.inner-bg img {
+    transform: rotate(-10deg);
+}
+
+
+
+
+
+/* Section ============================================= */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Footer =============================================== */
 footer {
     position: relative;
     color: #fff;
     min-height: 200px;
     background: #2d2d2d;
-    color: #eee;
-    padding: 20px;
+    color: #f5f5f5;
+}
+
+footer .row {
+    padding: 30px 0;
 }
 
 footer li {
+    padding-top: 5px;
     list-style: none;
 }
 
 footer a {
     cursor: pointer;
     font-family: 'Oxygen', sans-serif;
-    color: #eee;
+    color: #f5f5f5;
     transition: 0.3s;
     text-decoration: none !important;
 }
 
 footer a:hover {
-    color: #eee;
+    color: #f5f5f5;
     opacity: 0.6;
 }
 
 .copyright {
-    padding-top: 10px;
     font-size: 0.8rem;
     text-align: center;
 }
@@ -240,10 +271,10 @@ footer a:hover {
     footer div.col-md-4 div {
         display: flex;
         flex-flow: row wrap;
-        /* text-align: center; */
         padding: 2rem 0;
         justify-content: center;
     }
+
     footer div.col-md-4 div li {
         padding-top: 10px;
         padding-right: 20px;

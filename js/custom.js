@@ -6,12 +6,4 @@ jQuery(document).ready(function($){
     });
 
 
-    $('.menu-container').click(function() {
-        $('.menu-container').fadeOut();
-    });
-
-    $('.closebtn').click(function() {
-        $('.menu-container').fadeIn();
-    });
-
 });
