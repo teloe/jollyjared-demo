@@ -35,9 +35,9 @@ p {
     transition: 0.5s ease;
 }
 
-section {
+/* section {
     padding: 4rem 0;
-}
+} */
 
 
 /* Side Nav/ Menu ======================================= */
@@ -211,11 +211,66 @@ h4::after {
 }
 
 
+/* Testimonials Section ================================= */
+#testimonials {
+    position: relative;
+}
 
+#testimonials figure {
+    position: relative;
+    margin-bottom: 0;
+    background: #fff;
+}
 
+#testimonials figure img {
+    width: 100%;
+}
 
-/* Section ============================================= */
+.block-quote--wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 50%;
+}
 
+.block-quote--wrapper span {
+    opacity: 0.2;
+    font-size: 10vw;
+    display: block;
+}
+
+.block-quote--wrapper cite {
+    opacity: 0.3;
+    text-align: center;
+    display: block;
+    width: 100%;
+    font-size: 1.5vw;
+}
+
+.block-quote--wrapper span:first-of-type {
+    margin-bottom: -4vw;
+}
+
+.block-quote--wrapper span:last-of-type {
+    margin-top: -4vw;
+}
+
+.block-quote--wrapper span:last-of-type {
+    float: right;
+}
+
+.block-quote--gradient h3 {
+    font-size: 3vw;
+    background: -webkit-gradient(linear,left top,right top,from(#FFBB65),to(#FA5A77));
+    background: linear-gradient(to right,#FFBB65,#FA5A77);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    line-height: 1.25;
+}
 
 
 
@@ -267,7 +322,25 @@ footer a:hover {
 
 
 /* Media Queries ======================================== */
+
+/* Mobile */
 @media (max-width: 767px) {
+    .block-quote--wrapper span {
+        font-size: 2rem;
+    }
+
+    .block-quote--wrapper cite {
+        font-size: 0.4rem;
+    }
+
+    .block-quote--wrapper span:first-of-type {
+        margin-bottom: -1rem;
+    }
+    
+    .block-quote--wrapper span:last-of-type {
+        margin-top: -2rem;
+    }
+
     footer div.col-md-4 div {
         display: flex;
         flex-flow: row wrap;
@@ -279,4 +352,28 @@ footer a:hover {
         padding-top: 10px;
         padding-right: 20px;
     }
+}
+
+/* Large Desktop */
+@media (min-width: 1200px) {
+    .block-quote--wrapper span {
+        font-size: 6rem;
+    }
+
+    .block-quote--wrapper cite {
+        font-size: 1.5rem;
+    }
+
+    .block-quote--wrapper span:first-of-type {
+        margin-bottom: -4rem;
+    }
+
+    .block-quote--wrapper span:last-of-type {
+        margin-top: -4rem;
+    }
+
+    .block-quote--gradient h3 {
+        font-size: 2.5rem;
+    }
+    
 }
