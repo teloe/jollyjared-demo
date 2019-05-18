@@ -124,7 +124,6 @@ p {
 }
 
 .social-links {
-    text-align: center;
     margin-top: auto;
     padding-bottom: 30px;
 }
@@ -164,12 +163,12 @@ header h1 {
 
 h4::before,
 h4::after {
-    content: '';
+    /* content: '';
     background: #fff;
     width: 20px;
     height: 2px;
     display: inline-block;
-    vertical-align: middle;
+    vertical-align: middle; */
 
 }
 
@@ -184,26 +183,41 @@ h4::after {
 
 /* About Section ======================================== */
 #about {
+    padding: 4rem 0;
     background: #fafafa;
 }
 #about h1 {
-    color: #102A43;
+    color: #1F2933;
+    text-align: center;
+}
+
+#about h1::after {
+    content: '';
+    display: block;
+    margin: 1rem auto 2rem;
+    height: 2px;
+    width: 30px;
+    background: #FA5A77;
+}
+
+.outer-bg, .inner-bg {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
 .outer-bg {
     margin: 2rem auto auto;
-    height: 350px;
-    width: 250px;
-    background: #5B86E5;
+    height: 280px;
+    width: 200px;
+    background: #FFBB65;
     transform: rotate(5deg);
 }
 
 .inner-bg {
     float: right;
-    height: 350px;
-    width: 250px;
+    height: 280px;
+    width: 200px;
     background: #36D1DC;
-    transform: rotate(5deg);
+    transform: rotate(5deg);   
 }
 
 .inner-bg img {
@@ -243,7 +257,6 @@ h4::after {
 
 .block-quote--wrapper cite {
     opacity: 0.3;
-    text-align: center;
     display: block;
     width: 100%;
     font-size: 1.5vw;
@@ -268,7 +281,6 @@ h4::after {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    text-align: center;
     line-height: 1.25;
 }
 
@@ -289,7 +301,7 @@ footer {
     position: relative;
     color: #fff;
     min-height: 200px;
-    background: #2d2d2d;
+    background: #323F4B;
     color: #f5f5f5;
 }
 
@@ -317,7 +329,6 @@ footer a:hover {
 
 .copyright {
     font-size: 0.8rem;
-    text-align: center;
 }
 
 
@@ -325,6 +336,14 @@ footer a:hover {
 
 /* Mobile */
 @media (max-width: 767px) {
+    header {
+        background-attachment: initial;
+    }
+
+    header h1 {
+        font-size: 3rem;
+    }
+
     .block-quote--wrapper span {
         font-size: 2rem;
     }
