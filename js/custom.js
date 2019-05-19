@@ -7,8 +7,7 @@ jQuery(document).ready(function($){
 
     // Flexslider
     $('.services-slider').flexslider({
-        animation: "slide",
-        directionNav: true
+        animation: "slide"
       });
 
 

@@ -21,7 +21,7 @@ header {
     color: #424242;
 }
 
-h1  {
+h1 {
     letter-spacing: -0.1rem;
     color: #1F2933;
 }
@@ -39,6 +39,7 @@ p {
 .btn {
     background: #e87063;
     color: #fff;
+    text-transform: uppercase;
     font-size: 0.8rem;
     border-radius: 0;
     transition: 0.4s;
@@ -46,9 +47,10 @@ p {
     margin: 1rem auto 0;
 }
 
-.btn:hover, .btn:focus {
+.btn:hover,
+.btn:focus {
     color: #fff;
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
 
@@ -188,7 +190,8 @@ h4::after {
     background: #f5f5f5;
 }
 
-#about h1::after {
+#about h1::after,
+#services h1::after {
     content: '';
     display: block;
     margin: 1rem auto 2rem;
@@ -197,8 +200,9 @@ h4::after {
     background: #FA5A77;
 }
 
-.outer-bg, .inner-bg {
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+.outer-bg,
+.inner-bg {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
 .outer-bg {
@@ -214,7 +218,7 @@ h4::after {
     height: 280px;
     width: 200px;
     background: #36D1DC;
-    transform: rotate(5deg);   
+    transform: rotate(5deg);
 }
 
 .inner-bg img {
@@ -276,8 +280,8 @@ h4::after {
 
 .block-quote--gradient h3 {
     font-size: 3vw;
-    background: -webkit-gradient(linear,left top,right top,from(#FFBB65),to(#FA5A77));
-    background: linear-gradient(to right,#FFBB65,#FA5A77);
+    background: -webkit-gradient(linear, left top, right top, from(#FFBB65), to(#FA5A77));
+    background: linear-gradient(to right, #FFBB65, #FA5A77);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -292,10 +296,23 @@ h4::after {
     position: relative;
 }
 
-.services-slider {
-
+#services .service-img {
+    overflow: hidden;
+    position: relative;
 }
 
+#services .service-img img {
+    cursor: pointer;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+#services .service-img img:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
 
 
 
@@ -328,7 +345,7 @@ footer a {
     color: #f5f5f5;
     transition: 0.3s;
     text-decoration: none !important;
-}   
+}
 
 footer a:hover {
     color: #f5f5f5;
@@ -395,5 +412,5 @@ footer a:hover {
     .block-quote--gradient h3 {
         font-size: 2.5rem;
     }
-    
+
 }
