@@ -55,6 +55,7 @@ p {
 
 /* Side Nav/ Menu ======================================= */
 .sidenav {
+    font-family: 'Oxygen', sans-serif;
     height: 100%;
     width: 300px;
     transform: translateX(-300px);
@@ -79,18 +80,19 @@ p {
 .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 22px;
+    font-size: 1.2em;
     color: #fff;
     display: block;
     transition: 0.3s;
 }
 
 .sidenav a:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
+    color: #f1f1f1;
 }
 
-.sidenav a:hover {
-    color: #f1f1f1;
+.sidenav .closebtn:hover {
+    transform: scale(1);
 }
 
 .sidenav .closebtn {
@@ -121,7 +123,7 @@ p {
 }
 
 .logo.shrink {
-    width: 60px;
+    width: 100px;
 }
 
 .menu-content {
@@ -238,20 +240,24 @@ header h4::after {
 /* Testimonials Section ================================= */
 #testimonials {
     position: relative;
+    background: url(/images/palmtrees.png) no-repeat center;
+    background-size: cover;
+    padding: 80px 0;
 }
-
+/* 
 #testimonials figure {
     position: relative;
     margin-bottom: 0;
-    background: #fff;
-}
+    background: url(/images/palmtrees.png) no-repeat center;
+    background-size: cover;
+} */
 
-#testimonials figure img {
+/* #testimonials figure img {
     width: 100%;
-}
+} */
 
 .block-quote--wrapper {
-    position: absolute;
+    /* position: absolute; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -302,6 +308,7 @@ header h4::after {
     top: 40%;
 }
 
+.flex-control-nav{position: inherit;}
 
 /* Services Section ===================================== */
 #services {

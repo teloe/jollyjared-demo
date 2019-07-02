@@ -5,6 +5,11 @@ jQuery(document).ready(function ($) {
         return ($doc.scrollTop() > 40) ? $('.menu-bar, .logo').addClass('shrink') : $('.menu-bar, .logo').removeClass('shrink');
     });
 
+    $('.testimonials-slider').flexslider({
+        animation: "slide",
+        animationLoop: true,
+        controlNav: true
+    });
 
     $('.flexslider').flexslider({
         animation: "slide",

@@ -14,8 +14,8 @@
     <link href="https://fonts.googleapis.com/css?family=Oxygen:300,400|Paytone+One&display=swap" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-    <!-- Flexslider -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.7.2/flexslider.css">
+    <!-- Flexslider css -->
+    <link rel="stylesheet" href="./css/flexslider.min.css">
     <!-- Main css -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -55,10 +55,10 @@
     <div class="menu-bar">
         <div class="menu-content">
             <div class="menu-container my-auto">
-                <span style="font-size:30px;cursor:pointer; color: #5B86E5;" onclick="openNav()"><img src="./images/hamburger-icon.png" alt="Menu" width="35"></span>
+                <span style="font-size:30px;cursor:pointer; color: #1F2933;" onclick="openNav()"><i class="fas fa-bars"></i></span>
             </div>
             <div class="mx-auto text-center" style="width: 100px;">
-                <a class="navbar-brand mr-0" href="./index.html"><img src="./images/logo.png" width="80" class="logo"></a>
+                <a class="navbar-brand mr-0" href="./index.html"><img src="./images/logo.png" width="120" class="logo"></a>
             </div>
         </div>
 
@@ -103,22 +103,94 @@
             </section>
 
             <section id="testimonials">
-                <figure data-aos="fade-left" data-aos-duration="1200" data-aos-offset="350">
+                <!-- <figure>
                     <img src="./images/palmtrees.png" alt="palmtrees">
-                </figure>
-                <div class="block-quote--wrapper m-auto container" data-aos="fade-up" data-aos-duration="1200" data-aos-offset="350">
-                    <span>“</span>
-                    <blockquote class="block-quote--gradient">
-                        <h3 class="text-center">Jared is the best! We can really count on him for our beach delivery
-                            service needs. We would recommend him to anyone!</h3>
-                        <cite class="text-center">- John D.</cite>
-                    </blockquote>
-
-                    <span>”</span>
+                </figure> -->
+                <div class="testimonials-slider">
+                    <ul class="slides">
+                        <li>
+                            <div class="block-quote--wrapper m-auto container">
+                                <span>“</span>
+                                <blockquote class="block-quote--gradient">
+                                    <h3 class="text-center">Jolly Jared's was very helpful with making my beach experience very enjoyable. They were very quick and with my last minute request!</h3>
+                                    <cite class="text-center">- Jami L, Santa Barbara, CA</cite>
+                                </blockquote>
+            
+                                <span>”</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="block-quote--wrapper m-auto container">
+                                <span>“</span>
+                                <blockquote class="block-quote--gradient">
+                                    <h3 class="text-center">Great service, and even better mission! Delivered and picked up my beach stuff on time. Loved meeting Jolly Jared himself! I will definitely use this service again.</h3>
+                                    <cite class="text-center">- Natalie E., Los Angeles, CA</cite>
+                                </blockquote>
+            
+                                <span>”</span>
+                            </div>
+                        </li>
+                        <!-- <li>
+                            <div class="block-quote--wrapper m-auto container">
+                                <span>“</span>
+                                <blockquote class="block-quote--gradient">
+                                    <h3 class="text-center">We found renting from this service very convenient.  The equipment was in really good (like new) condition and they had everything we needed. They are very helpful and professional and made for a great day at the beach.  If you are looking for optimal customer service delivered with a smile, I would highly recommend their service for any beach excursion.</h3>
+                                    <cite class="text-center">- Leslie S., Santa Barbara, CA</cite>
+                                </blockquote>
+            
+                                <span>”</span>
+                            </div>
+                        </li> -->
+                        <li>
+                            <div class="block-quote--wrapper m-auto container">
+                                <span>“</span>
+                                <blockquote class="block-quote--gradient">
+                                    <h3 class="text-center">Jolly jareds was such a great solution for our beach day in Santa Barbara! It was convenient and the best customer service :) The equipment was high quality which was missing from other rental options on the beach. I will be back!!</h3>
+                                    <cite class="text-center">- Shayna N., San Fernando, CA</cite>
+                                </blockquote>
+            
+                                <span>”</span>
+                            </div>
+                        </li>
+                        <!-- <li>
+                            <div class="block-quote--wrapper m-auto container">
+                                <span>“</span>
+                                <blockquote class="block-quote--gradient">
+                                    <h3 class="text-center">Wonderful business! Professional, quality product and I just love the whole idea of helping Jared grow his business. He has a committed family and helpers and I can't say enough about the quality of thia business. Competitive prices also.  I would give them a ten star review if I could.</h3>
+                                    <cite class="text-center">- Mary L., Ottawa, Canada</cite>
+                                </blockquote>
+            
+                                <span>”</span>
+                            </div>
+                        </li> -->
+                        <li>
+                            <div class="block-quote--wrapper m-auto container">
+                                <span>“</span>
+                                <blockquote class="block-quote--gradient">
+                                    <h3 class="text-center">Jolly Jared's beach rentals was extremely reasonable and convenient! They delivered and picked up right at our hotel. We loved being able to support this local business and they're special story/mission. I will absolutely use again.</h3>
+                                    <cite class="text-center">- Laura S., Summerland, CA</cite>
+                                </blockquote>
+            
+                                <span>”</span>
+                            </div>
+                        </li>
+                        <!-- <li>
+                            <div class="block-quote--wrapper m-auto container">
+                                <span>“</span>
+                                <blockquote class="block-quote--gradient">
+                                    <h3 class="text-center">We had a great experience with Jolly Jared's when we were visiting Santa Barbara for a couple of days last week. Our hotel gave us their card so we could rent beach chairs and an umbrella. The chairs and umbrella were delivered the next morning on time and then at the end of our beautiful beach day they met us back at the hotel at the promised time. Prices are very reasonable and the customer service was fantastic! And Jared is a real sweetheart! My husband and I highly recommend Jolly Jared's if you're visiting Santa Barbara, CA.</h3>
+                                    <cite class="text-center">- Kathleen S., Brockton, MA</cite>
+                                </blockquote>
+            
+                                <span>”</span>
+                            </div>
+                        </li> -->
+                    </ul>
                 </div>
+                
             </section>
 
-            <section id="photo-gallery" class="pb-4">
+            <!-- <section id="photo-gallery" class="pb-4">
                 <div class="flexslider carousel" style="border: none; height: 15rem;">
                     <ul class="slides">
                         <li>
@@ -214,7 +286,7 @@
                     </ul>
                 </div>
                 <a href="" class="btn d-block">View Gallery</a>
-            </section>
+            </section> -->
 
             <section id="services">
                 <div class="container text-center">
