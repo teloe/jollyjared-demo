@@ -22,9 +22,11 @@
 
 <body>
 
-    <div id="main-sidenav" class="sidenav">
+    <nav id="main-sidenav" class="sidenav">
         <div>
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+                <img src="./images/close2.png" width=16 alt="Close">
+            </a>
             <li class="nav-item">
                 <a class="nav-link" href="#">Beach Rentals</a>
             </li>
@@ -50,12 +52,14 @@
             <a style="display: inline-block;"><i class="fas fa-envelope social"></i></a>
 
         </div>
-    </div>
+    </nav>
 
     <div class="menu-bar">
         <div class="menu-content">
             <div class="menu-container my-auto">
-                <span style="font-size:30px;cursor:pointer; color: #1F2933;" onclick="openNav()"><i class="fas fa-bars"></i></span>
+                <span style="font-size:30px;cursor:pointer; color: #1F2933;" onclick="openNav()">
+                    <img src="./images/menu1.png" width=26 alt="Menu">
+                </span>
             </div>
             <div class="mx-auto text-center" style="width: 100px;">
                 <a class="navbar-brand mr-0" href="./index.html"><img src="./images/logo.png" width="120" class="logo"></a>
@@ -68,9 +72,7 @@
         <header>
             <div class="banner-content container d-flex" data-aos="fade-right" data-aos-duration="1000">
                 <h1>Jolly Jared's</h1>
-                <h4>
-                    Work like a captain, play like a pirate
-                </h4>
+                <h4>Work like a captain, play like a pirate</h4>
             </div>
         </header>
         <div class="content">
@@ -78,24 +80,13 @@
             <section id="about">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-8 my-auto pb-4">
-                            <h1 class="text-center">Hi, I'm Jared.</h1>
-                            <p>
-                                This website is dedicated to help promote my small businesses and to educate people that
-                                individuals with disabilities can succeed with a little bit of help from their family
-                                and friends. My start-up businesses include beach supply rental and delivery, coffee
-                                delivery, and firewood sales and delivery. My goal is to make all three of these
-                                successful enterprises that will give me the opportunity to make some income, but more
-                                importantly, to make new friends and become an active participant in my community.
-                            </p>
-                            <a href="" class="btn">Learn more about me</a>
+                        <div class="col-md-6">
+                            <img src="./images/jared1.jpg" alt="Jared's photo on the beach" class="img-fluid">
                         </div>
-                        <div class="col-md-4">
-                            <div class="outer-bg">
-                                <div class="inner-bg">
-                                    <img src="./images/jared1.jpg" alt="Jared's photo on the beach" class="img-responsive" width="200">
-                                </div>
-                            </div>
+                        <div class="col-md-6">
+                            <h1 class="text-center">Hi, I'm Jared.</h1>
+                            <p>This website is dedicated to help promote my small businesses and to educate people that individuals with disabilities can succeed with a little bit of help from their family and friends. My start-up businesses include beach supply rental and delivery, coffee delivery, and firewood sales and delivery. My goal is to make all three of these successful enterprises that will give me the opportunity to make some income, but more importantly, to make new friends and become an active participant in my community.</p>
+                            <a href="" class="btn">Learn more about me</a>
                         </div>
                     </div>
 
@@ -103,9 +94,6 @@
             </section>
 
             <section id="testimonials">
-                <!-- <figure>
-                    <img src="./images/palmtrees.png" alt="palmtrees">
-                </figure> -->
                 <div class="testimonials-slider">
                     <ul class="slides">
                         <li>
@@ -115,7 +103,6 @@
                                     <h3 class="text-center">Jolly Jared's was very helpful with making my beach experience very enjoyable. They were very quick and with my last minute request!</h3>
                                     <cite class="text-center">- Jami L, Santa Barbara, CA</cite>
                                 </blockquote>
-            
                                 <span>”</span>
                             </div>
                         </li>
@@ -126,7 +113,6 @@
                                     <h3 class="text-center">Great service, and even better mission! Delivered and picked up my beach stuff on time. Loved meeting Jolly Jared himself! I will definitely use this service again.</h3>
                                     <cite class="text-center">- Natalie E., Los Angeles, CA</cite>
                                 </blockquote>
-            
                                 <span>”</span>
                             </div>
                         </li>
@@ -148,7 +134,6 @@
                                     <h3 class="text-center">Jolly jareds was such a great solution for our beach day in Santa Barbara! It was convenient and the best customer service :) The equipment was high quality which was missing from other rental options on the beach. I will be back!!</h3>
                                     <cite class="text-center">- Shayna N., San Fernando, CA</cite>
                                 </blockquote>
-            
                                 <span>”</span>
                             </div>
                         </li>
@@ -170,7 +155,6 @@
                                     <h3 class="text-center">Jolly Jared's beach rentals was extremely reasonable and convenient! They delivered and picked up right at our hotel. We loved being able to support this local business and they're special story/mission. I will absolutely use again.</h3>
                                     <cite class="text-center">- Laura S., Summerland, CA</cite>
                                 </blockquote>
-            
                                 <span>”</span>
                             </div>
                         </li>
@@ -417,18 +401,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.7.2/jquery.flexslider.js"></script>
     <!-- Custom js -->
     <script type="text/javascript" src="./js/custom.js"></script>
-
-    <script>
-        function openNav() {
-            $('#main-sidenav').css('transform', 'translateX(0)');
-            $('.main').css('transform', 'translateX(300px)');
-        }
-
-        function closeNav() {
-            $('#main-sidenav').css('transform', 'translateX(-300px)');
-            $('.main').css('transform', 'translateX(0)');
-        }
-    </script>
 </body>
 
 </html>
