@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Jolly Jared</title>
@@ -16,6 +15,13 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <!-- Flexslider css -->
     <link rel="stylesheet" href="./css/flexslider.min.css">
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <!-- nanogallery2 -->
+    <link  href="https://unpkg.com/nanogallery2@2.4.2/dist/css/nanogallery2.min.css" rel="stylesheet" type="text/css">
+    <script  type="text/javascript" src="https://unpkg.com/nanogallery2@2.4.2/dist/jquery.nanogallery2.min.js"></script>
+
     <!-- Main css -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -62,7 +68,7 @@
                 </span>
             </div>
             <div class="mx-auto text-center" style="width: 100px;">
-                <a class="navbar-brand mr-0" href="./index.html"><img src="./images/logo.png" width="120" class="logo"></a>
+                <a class="navbar-brand mr-0" href="./index.html"><img src="./images/logo.png" class="logo"></a>
             </div>
         </div>
 
@@ -174,104 +180,6 @@
                 
             </section>
 
-            <!-- <section id="photo-gallery" class="pb-4">
-                <div class="flexslider carousel" style="border: none; height: 15rem;">
-                    <ul class="slides">
-                        <li>
-                            <div class="img-wrapper">
-                                <img src="./images/img1.jpg" />
-                            </div>
-                        </li>
-                        <li>
-                            <div class="img-wrapper">
-                                <img src="./images/img2.jpg" />
-                            </div>
-                        </li>
-                        <li>
-                            <div class="img-wrapper">
-                                <img src="./images/img3.jpg" />
-                            </div>
-                        </li>
-                        <li>
-                            <div class="img-wrapper">
-                                <img src="./images/img4.jpg" />
-                            </div>
-                        </li>
-                        <li>
-                            <div class="img-wrapper">
-                                <img src="./images/img5.jpg" />
-                            </div>
-                        </li>
-                        <li>
-                            <div class="img-wrapper">
-                                <img src="./images/img6.jpg" />
-                            </div>
-                        </li>
-                        <li>
-                            <div class="img-wrapper">
-                                <img src="./images/img7.jpg" />
-                            </div>
-                        </li>
-                        <li>
-                            <div class="img-wrapper">
-                                <img src="./images/img8.jpg" />
-                            </div>
-                        </li>
-                        <li>
-                            <div class="img-wrapper">
-                                <img src="./images/img9.jpg" />
-                            </div>
-                        </li>
-                        <li>
-                            <div class="img-wrapper">
-                                <img src="./images/img10.jpg" />
-                            </div>
-                        </li>
-                        <li>
-                            <div class="img-wrapper">
-                                <img src="./images/img11.jpg" />
-                            </div>
-                        </li>
-                        <li>
-                            <div class="img-wrapper">
-                                <img src="./images/img12.jpg" />
-                            </div>
-                        </li>
-                        <li>
-                            <div class="img-wrapper">
-                                <img src="./images/img13.jpg" />
-                            </div>
-                        </li>
-                        <li>
-                            <div class="img-wrapper">
-                                <img src="./images/img14.jpg" />
-                            </div>
-                        </li>
-                        <li>
-                            <div class="img-wrapper">
-                                <img src="./images/img15.jpg" />
-                            </div>
-                        </li>
-                        <li>
-                            <div class="img-wrapper">
-                                <img src="./images/img16.jpg" />
-                            </div>
-                        </li>
-                        <li>
-                            <div class="img-wrapper">
-                                <img src="./images/img17.jpg" />
-                            </div>
-                        </li>
-                        <li>
-                            <div class="img-wrapper">
-                                <img src="./images/img18.jpg" />
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <a href="" class="btn d-block">View Gallery</a>
-            </section> -->
-
             <section id="services">
                 <div class="container text-center">
                     <h1 class="text-center">Services</h1>
@@ -332,6 +240,51 @@
                 </div>
             </section>
 
+            <section id="gallery" class="pb-4">
+                <div class="container">
+                        <img class="img-fluid" src="./images/image1.jpg" data-aos="fade-up" data-aos-duration="1500" />
+                        <img class="img-fluid" src="./images/image2.jpg" data-aos="fade-up" data-aos-duration="1500" />
+                        <img class="img-fluid" src="./images/image3.jpg" data-aos="fade-up" data-aos-duration="1500" />
+                        <img class="img-fluid" src="./images/image5.jpg" data-aos="fade-up" data-aos-duration="1500" />
+                        <a href="" class="btn d-block">View Gallery</a>
+                    </div>
+
+                    <!-- <ul class="slides">
+                        <li>
+                            <div class="img-wrapper">
+                                <img src="./images/image1.jpg" />
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img-wrapper">
+                                <img src="./images/image2.jpg" />
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img-wrapper">
+                                <img src="./images/image3.jpg" />
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img-wrapper">
+                                <img src="./images/image4.jpg" />
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img-wrapper">
+                                <img src="./images/image5.jpg" />
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img-wrapper">
+                                <img src="./images/img6.jpg" />
+                            </div>
+                        </li>
+                        
+                    </ul> -->
+                
+            </section>
+
         </div>
 
         <footer>
@@ -375,7 +328,7 @@
                 </div>
 
             </div>
-            <div class="row" style="background: #1F2933;">
+            <div class="row">
                 <div class="copyright mx-auto text-center">
                     <p class="mb-0">Copyright &copy; 2019 Jolly Jared</p>
                 </div>
@@ -384,8 +337,7 @@
         </footer>
     </div>
 
-    <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    
     <!-- Popper.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
     </script>
@@ -399,6 +351,7 @@
     </script>
     <!-- Flexslider -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.7.2/jquery.flexslider.js"></script>
+
     <!-- Custom js -->
     <script type="text/javascript" src="./js/custom.js"></script>
 </body>

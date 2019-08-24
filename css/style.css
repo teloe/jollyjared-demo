@@ -11,7 +11,7 @@
 *{box-sizing:border-box}
 html,body{width:100%;overflow-x:hidden}
 h1,h2,h3,h4,h5,h6{font-family:var(--header-font)}
-h1{letter-spacing: -.1rem}
+h1{letter-spacing:-.1rem}
 p,a,li{font-family:var(--body-font);font-weight:100;color:#262626}
 h1{letter-spacing:-.1rem;color:#1F2933}
 p{font-weight:300;line-height:2rem}
@@ -27,7 +27,8 @@ p{font-weight:300;line-height:2rem}
 .menu-bar{z-index:99;box-shadow:0 0 45px rgba(0,0,0,.2);top:0;position:fixed;width:100%;background:#fff;padding:10px 0}
 .logo,.menu-bar{transition:.3s}
 .menu-bar.shrink{padding:5px 0}
-.logo.shrink{width:100px}
+.logo.shrink{width:60px}
+.logo{width:80px}
 .menu-content{position:relative}
 .menu-container{top:0;bottom:0;left:20px;height:45px;position:absolute}
 .social-links{margin-top:auto;padding-bottom:30px}
@@ -35,12 +36,8 @@ p{font-weight:300;line-height:2rem}
 .social{color:#fff;font-size:1.75rem}
 
 /* HEADER -------------------------------------------------------- */
-header {
-    background: url(../images/banner.jpg) no-repeat center;
-    background-size: cover;
-    /* background-attachment: fixed */
-}
-.banner-content{height:750px;flex-direction:column;justify-content:center;color:#fff;text-shadow:5px 5px 10px rgba(0,0,0,0.5)}
+header{background:url(../images/banner.jpg) no-repeat center;background-size:cover}
+.banner-content{min-height:500px;flex-direction:column;justify-content:center;color:#fff;text-shadow:5px 5px 10px rgba(0,0,0,0.5)}
 header h1{color:#fff;font-size:4rem}
 header h4::before,header h4::after{content:'';background:#fff;height:2px;width:20px;display:inline-block;vertical-align:middle}
 header h4::before{margin-right:10px}
@@ -49,7 +46,7 @@ header h4::after{margin-left:10px}
 
 /* #about --------------------------------------------------------- */
 #about{background:#fafafa}
-#about .row{padding:8rem 0}
+#about .row{padding:6rem 0}
 #about h1::after,#services h1::after{content:'';display:block;margin:1rem auto 2rem;height:2px;width:30px;background:#FA5A77}
 #about .col-md-6:first-child{text-align:center}
 #about .col-md-6:first-child img{box-shadow:-15px 15px #FFBB65}
@@ -58,8 +55,8 @@ header h4::after{margin-left:10px}
 /* #testimonials -------------------------------------------------- */
 #testimonials{position:relative;background:url(/images/palmtrees.png) no-repeat center;background-size:cover;padding:80px 0}
 .block-quote--wrapper{display:flex;flex-direction:column;justify-content:center;top:0;right:0;bottom:0;left:0}
-.block-quote--wrapper span{opacity:.2;font-size:10vw;display:block}
-.block-quote--wrapper cite{opacity:.3;display:block;width:100%;font-size:2.5vw}
+.block-quote--wrapper span{opacity:.2;font-size:10vw;display:block;font-family:var(--header-font)}
+.block-quote--wrapper cite{opacity:.3;display:block;width:100%;font-size:2.5vw;padding-top:1rem}
 .block-quote--wrapper span:first-of-type{margin-bottom:-4vw}
 .block-quote--wrapper span:last-of-type{margin-left:auto;margin-top:-10vw;float:right}
 .block-quote--gradient h3{font-size:3vw;background:-webkit-gradient(linear,left top,right top,from(#FFBB65),to(#FA5A77));background:linear-gradient(to right,#FFBB65,#FA5A77);background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:transparent;line-height:1.25}
@@ -71,16 +68,50 @@ header h4::after{margin-left:10px}
 #services{padding:4rem 0 0;background:#fafafa;position:relative}
 #services .img-wrapper{overflow:hidden;position:relative}
 #services .img-wrapper img{cursor:pointer;-moz-transition:all .3s;-webkit-transition:all .3s;transition:all .3s}
-#services .img-wrapper img:hover{-moz-transform:scale(1.1);-webkit-transform:scale(1.1);transform:scale(1.1)}
+/* #services .img-wrapper img:hover{-moz-transform:scale(1.1);-webkit-transform:scale(1.1);transform:scale(1.1)} */
+
+
+/* #gallery ------------------------------------------------------ */
+#gallery .btn {
+    margin: 6rem auto 2rem; 
+}
+#gallery .container {
+    position: relative;
+    text-align: center;
+    padding: 100px 0;
+}
+#gallery img {
+    /* position: absolute; */
+    box-shadow: 0 0 30px rgba(0,0,0,0.5);
+}
+#gallery img:nth-of-type(1) {
+  max-width: 500px;
+
+}
+#gallery img:nth-of-type(2) {
+    z-index: -1;
+}
+#gallery img:nth-of-type(3) {
+    max-width: 400px;
+
+}
+#gallery img:nth-of-type(4) {
+   max-width: 600px; 
+   margin-top: -80px;
+}
+
 
 
 /* FOOTER --------------------------------------------------------- */
-footer{position:relative;color:#fff;min-height:200px;background:#323F4B;color:#f5f5f5}
-footer .row{padding:30px 0}
-footer li{padding-top:5px;list-style:none}
+footer{position:relative;color:#fff;min-height:200px;background:#1b212f;color:#f5f5f5}
+footer>div.row{background:#161b27;color:#fff}
+footer .row{padding:4rem 0}
+footer .row:nth-of-type(2){padding-top:0}
+footer .row .col-md-8{text-align:center}
+footer li{padding-top:15px;list-style:none}
 footer a{cursor:pointer;font-family:'Oxygen',sans-serif;color:#f5f5f5;transition:.3s;text-decoration:none!important}
 footer a:hover{color:#f5f5f5;opacity:.6}
-.copyright{font-size:.8rem}
+.copyright p{color:#f5f5f5;padding-top:4rem}
 
 
 /* MEDIA QUERIES -------------------------------------------------- */
@@ -98,19 +129,30 @@ footer a:hover{color:#f5f5f5;opacity:.6}
     header{background-attachment:initial}
     .btn{display:block;margin-top:2rem}
     header h1{font-size:3rem}
-    #about .col-md-6:last-child {
-        padding-top: 4rem;
-    }
+    #about .col-md-6:last-child{padding-top:4rem}
     .block-quote--wrapper h3{font-size:4.5vw}
     footer div.col-md-4 div{display:flex;flex-flow:row wrap;padding:2rem 0;justify-content:center}
     footer div.col-md-4 div li{padding-top:10px;padding-right:20px}
+}
+
+@media only screen and (min-width: 768px) {
+    .logo.shrink{width:100px}
+    .logo{width:120px}
+}
+
+@media only screen and (min-width: 1400px) {
+    .banner-content{height:48vw;max-height:95vh}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1399px) {
+    .banner-content{min-height:750px}
 }
 
 /* Desktop */
 @media (min-width: 1200px) {
     .block-quote--wrapper span{font-size:6rem}
     .block-quote--wrapper cite{font-size:1.5rem}
-    .block-quote--wrapper span:first-of-type{margin-bottom:-4rem}
+    .block-quote--wrapper span:first-of-type{margin-bottom:-2rem}
     .block-quote--wrapper span:last-of-type{margin-top:-4rem}
     .block-quote--gradient h3{font-size:2.5rem}
 }

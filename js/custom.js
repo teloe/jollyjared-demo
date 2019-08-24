@@ -16,7 +16,8 @@ jQuery(document).ready(function ($) {
     $('.testimonials-slider').flexslider({
         animation: "slide",
         animationLoop: true,
-        controlNav: true
+        controlNav: true, 
+        directionNav: false
     });
 
     $('.flexslider').flexslider({
@@ -25,6 +26,8 @@ jQuery(document).ready(function ($) {
         itemWidth: 200,
         itemMargin: 0
     });
+
+    
 
 
 });
